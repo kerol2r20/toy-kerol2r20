@@ -1,0 +1,36 @@
+{
+  "name": "toy-kerol2r20",
+  "version": "1.0.0",
+  "description": "Just a testing module for npm",
+  "main": "lib/index.js",
+  "repository": "https://github.com/kerol2r20/toy-kerol2r20",
+  "author": "Yu-Hsin Lu",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^22.1.1",
+    "jest": "^22.1.4",
+    "ts-jest": "^22.0.3",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "./src/(__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "scripts": {
+    "test": "jest --no-cache",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "tslint --project tsconfig.json"
+  }
+}
